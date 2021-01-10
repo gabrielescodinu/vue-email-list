@@ -19,12 +19,31 @@
     background-color: green;
   }
 
+  .column {
+    display: flex;
+    flex-direction: row;
+  }
+
 </style>
 
 <body>
   <div id="app">
-    <section class="quadrato" @click="change">
-    </section>
+    <div class="column">
+      <div class="quadrato" @click="change"></div>
+      <div class="quadrato" @click="change"></div>
+      <div class="quadrato" @click="change"></div>
+    </div>
+    <div class="column">
+      <div class="quadrato" @click="change"></div>
+      <div class="quadrato" @click="change"></div>
+      <div class="quadrato" @click="change"></div>
+    </div>
+    <div class="column">
+      <div class="quadrato" @click="change"></div>
+      <div class="quadrato" @click="change"></div>
+      <div class="quadrato" @click="change"></div>
+    </div>
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
